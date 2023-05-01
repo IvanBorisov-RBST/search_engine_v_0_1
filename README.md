@@ -31,8 +31,15 @@
             <code>cd build</code>
         </blockquote>
     </li>
+     <li>
+        Input command to build full :
+        <blockquote>
+            <code>cmake .. -G "MinGW Makefiles"</code><br/>
+            <code>cmake --build . </code>
+        </blockquote>
+    </li>
     <li>
-        Input command to build App without google_test:
+        Input command to build App without Tests:
         <blockquote>
             <code>cmake .. -G "MinGW Makefiles"</code><br/>
             <code>cmake --build . --config Release --target SearchEngine</code>
@@ -41,26 +48,24 @@
     <li>
         Go to source directory of build and run SearchEngine.exe:
         <blockquote>
-            <code>cd src</code><br/>
+            <code>cd .\src</code><br/>
             <code>start SearchEngine.exe</code>
         </blockquote>
     </li>
-    
     <li>
-        Input command to build App without google_test:
+        Input command to build Tests without App:
         <blockquote>
             <code>cmake .. -G "MinGW Makefiles"</code><br/>
-            <code>cmake --build . --config Release --target SearchEngine</code>
+            <code>cmake --build . --config Release --target google_tests</code>
         </blockquote>
     </li>
     <li>
         Go to source directory of build and run SearchEngine.exe:
         <blockquote>
-            <code>cd src</code><br/>
-            <code>start SearchEngine.exe</code>
+            <code>cd .\tests\google_tests</code><br/>
+            <code>start google_tests.exe</code>
         </blockquote>
     </li>
-    
 </ul>
 
 <h2>How does this engine work</h2>
