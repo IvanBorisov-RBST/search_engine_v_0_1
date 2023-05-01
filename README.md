@@ -18,17 +18,17 @@
     <li>
         Download project in ZIP and then unpack it or clone this repository to your PC by command:
         <blockquote>
-            <code>git clone https://github.com/IvanBorisov-RBST/SeachProject_v_0_1.git</code></blockquote>
+            <code>git clone https://github.com/IvanBorisov-RBST/search_engine_v_0_1.git</code></blockquote>
         and then go to folder of project
         <blockquote>
-            <code>cd search-engine</code>
+            <code>cd search_engine_v_0_1</code>
         </blockquote>
     </li>
     <li>
         Create folder for building app and go to it:
         <blockquote>
-            <code>mkdir build</code><br/>
-            <code>cd build</code>
+            <code>mkdir building</code><br/>
+            <code>cd building</code>
         </blockquote>
     </li>
     <li>
