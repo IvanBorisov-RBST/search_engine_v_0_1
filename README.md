@@ -45,6 +45,22 @@
             <code>start SearchEngine.exe</code>
         </blockquote>
     </li>
+    
+    <li>
+        Input command to build App without google_test:
+        <blockquote>
+            <code>cmake .. -G "MinGW Makefiles"</code><br/>
+            <code>cmake --build . --config Release --target SearchEngine</code>
+        </blockquote>
+    </li>
+    <li>
+        Go to source directory of build and run SearchEngine.exe:
+        <blockquote>
+            <code>cd src</code><br/>
+            <code>start SearchEngine.exe</code>
+        </blockquote>
+    </li>
+    
 </ul>
 
 <h2>How does this engine work</h2>
