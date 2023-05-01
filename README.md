@@ -42,14 +42,14 @@
         Go to source directory of build and run SearchEngine.exe:
         <blockquote>
             <code>cd src</code><br/>
-            <code>start SearchEngine.exe</code>
+            <code>SearchEngine.exe</code>
         </blockquote>
     </li>
     <li>
         Go to tests directory of build and run google_tests.exe:
         <blockquote>
             <code>cd .\tests\google_tests</code><br/>
-            <code>start google_tests.exe</code>
+            <code>google_tests.exe</code>
         </blockquote>
     </li>
     <li>
@@ -63,7 +63,7 @@
         Go to source directory of build and run SearchEngine.exe:
         <blockquote>
             <code>cd src</code><br/>
-            <code>start SearchEngine.exe</code>
+            <code>SearchEngine.exe</code>
         </blockquote>
     </li>
     <li>
@@ -77,7 +77,7 @@
         Go to tests directory of build and run google_tests.exe:
         <blockquote>
             <code>cd .\tests\google_tests</code><br/>
-            <code>start google_tests.exe</code>
+            <code>google_tests.exe</code>
         </blockquote>
     </li>
 </ul>
