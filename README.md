@@ -5,14 +5,14 @@
 <h2>This project was created using the following technologies</h2>
 
 <ul>
-    <li><a href="https://en.cppreference.com/w/cpp/14#">C++14</a></li>
+    <li><a href="https://en.cppreference.com/w/cpp/17#">C++14</a></li>
     <li><a href="https://cmake.org/cmake/help/latest/index.html">CMake 3.26.3</a></li>
     <li><a href="https://github.com/nlohmann/json">Nlohmann JSON Library</a></li>
     <li><a href="https://github.com/google/googletest">GoogleTest Framework</a></li>
     <li><a href="https://www.mingw-w64.org/">MinGW w64 12.2.0</a></li>
 </ul>
 
-<h2>How to build and run this app and test to it/h2>
+<h2>How to build and run this app</h2>
 
 <ul>
     <li>
@@ -27,26 +27,22 @@
     <li>
         Create folder for building app and go to it:
         <blockquote>
-            <code>mkdir building</code><br/>
-            <code>cd building</code>
+            <code>mkdir build</code><br/>
+            <code>cd build</code>
         </blockquote>
     </li>
     <li>
-        Input command:
+        Input command to build App without google_test:
         <blockquote>
             <code>cmake .. -G "MinGW Makefiles"</code><br/>
             <code>cmake --build . --config Release --target SearchEngine</code>
         </blockquote>
-          if you get this messege "cmake: mingw32-make.exe No rule to make target", then use without --target;
-          <blockquote>
-             <code>cmake --build . --config Release</code>
-          </blockquote>
     </li>
     <li>
-        Go to source directory of build and run << .exe  >> file:
+        Go to source directory of build and run SearchEngine.exe:
         <blockquote>
             <code>cd src</code><br/>
-            <code>start  *.exe </code>
+            <code>start SearchEngine.exe</code>
         </blockquote>
     </li>
 </ul>
