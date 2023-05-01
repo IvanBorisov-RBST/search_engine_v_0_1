@@ -32,10 +32,24 @@
         </blockquote>
     </li>
      <li>
-        Input command to build full :
+        Input command to build App and Tests :
         <blockquote>
             <code>cmake .. -G "MinGW Makefiles"</code><br/>
             <code>cmake --build . </code>
+        </blockquote>
+    </li>
+    <li>
+        Go to source directory of build and run SearchEngine.exe:
+        <blockquote>
+            <code>cd src</code><br/>
+            <code>start SearchEngine.exe</code>
+        </blockquote>
+    </li>
+    <li>
+        Go to tests directory of build and run google_tests.exe:
+        <blockquote>
+            <code>cd .\tests\google_tests</code><br/>
+            <code>start google_tests.exe</code>
         </blockquote>
     </li>
     <li>
@@ -48,7 +62,7 @@
     <li>
         Go to source directory of build and run SearchEngine.exe:
         <blockquote>
-            <code>cd .\src</code><br/>
+            <code>cd src</code><br/>
             <code>start SearchEngine.exe</code>
         </blockquote>
     </li>
@@ -60,7 +74,7 @@
         </blockquote>
     </li>
     <li>
-        Go to source directory of build and run SearchEngine.exe:
+        Go to tests directory of build and run google_tests.exe:
         <blockquote>
             <code>cd .\tests\google_tests</code><br/>
             <code>start google_tests.exe</code>
