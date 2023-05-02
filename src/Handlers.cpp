@@ -2,7 +2,6 @@
 
 
     void JsonHandler::write(std::string filename, json j) {
-        std::experimental::filesystem::path path(filename);
         std::ofstream file(filename);
         file << j <<std::endl;
         file.close();
