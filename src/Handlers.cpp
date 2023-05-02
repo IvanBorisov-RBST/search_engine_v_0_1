@@ -2,14 +2,15 @@
 
 
     void JsonHandler::write(std::string filename, json j) {
-        std::ofstream file("../../"+filename);
+        std::experimental::filesystem::path path(filename);
+        std::ofstream file(filename);
         file << j <<std::endl;
         file.close();
     }
 
      json JsonHandler::read(std::string filename) {
         json data{};
-        std::ifstream file("../../" +filename);
+        std::ifstream file(filename);
         if(file.is_open()){
             data = json::parse( file);
         }
@@ -23,13 +24,13 @@
 
 
         void FileHandler::write(std::string filename, std::string line) {
-            std::ofstream file("../../"+filename);
+            std::ofstream file(filename);
             file << line << std::endl;
             file.close();
         }
 
         std::string FileHandler::read(std::string filename) {
-            std::ifstream file("../../"+filename);
+            std::ifstream file(filename);
             std::string line{};
             if(file.is_open()){
                 std::getline(file, line);
