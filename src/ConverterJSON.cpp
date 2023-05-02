@@ -2,7 +2,7 @@
 
 
 ConverterJSON::ConverterJSON(){
-        config = JsonHandler::read("config.json");
+        config = JsonHandler::read("../../config.json");
         if(!config.contains("config")){
             throw SearchExeption("\"config\"'s field is absent");
         }
@@ -33,7 +33,7 @@ std::vector<std::string> ConverterJSON::GetTextDocuments() {
 }
 
 std::vector<std::string> ConverterJSON::GetRequests(){
-        json requests = JsonHandler::read("requests.json");
+        json requests = JsonHandler::read("../../requests.json");
         if(requests.at("requests").empty()){
 
             throw SearchExeption("\"requests\"'s field is empty");
@@ -72,6 +72,6 @@ void ConverterJSON::putAnswers(std::vector<std::vector<std::pair<int, float>>> a
                     resultAnser["answers"]["request" + requestNumber] = request;
                     ++requestInd;
         }
-        JsonHandler::write("answers.json",resultAnser );
+        JsonHandler::write("../../answers.json",resultAnser );
 
     }
